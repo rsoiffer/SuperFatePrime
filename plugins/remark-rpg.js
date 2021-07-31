@@ -1,7 +1,7 @@
 const flatMap = require("unist-util-flatmap");
 
 module.exports = _options => tree => {
-  Object.assign(tree, flatMap(tree, replaceDice));
+  Object.assign(tree, flatMap(flatMap(tree, replaceDice), replaceTraits));
 };
 
 function replaceDice(node) {
@@ -14,6 +14,24 @@ function replaceDice(node) {
       return die === null
         ? { type: "text", value: token }
         : { type: "jsx", value: `<Die sides="${die[1]}"/>` }
+    });
+  }
+
+  return [node];
+}
+
+function replaceTraits(node) {
+  if (node.type === "text") {
+    const tokens = node.value.split(/(?={[^}]+})|(?<={[^}]+})/);
+
+    return tokens.map(token => {
+      const trait = token.match(/^{([^}]+)}$/);
+      if (trait === null) {
+        return { type: "text", value: token };
+      }
+
+      const name = JSON.stringify(trait[1]);
+      return { type: "jsx", value: `<Trait name={${name}}/>` };
     });
   }
 
