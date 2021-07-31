@@ -1,17 +1,26 @@
+import { graphql } from "gatsby";
+import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as React from "react";
 
-export default function IndexPage() {
+export default function IndexPage({ data }) {
+  const rules = data.allFile.nodes[0].childMdx;
+
   return (
     <main>
-      <title>Home Page</title>
-      <h1>
-        Congratulations
-        <br/>
-        <span>— you just made a Gatsby site!</span>
-        <span role="img" aria-label="Party popper emojis">
-          🎉🎉🎉
-        </span>
-      </h1>
+      <h1>SuperFate Prime</h1>
+      <MDXRenderer>{rules.body}</MDXRenderer>
     </main>
   );
 }
+
+export const query = graphql`
+  query {
+    allFile(filter: {sourceInstanceName: {eq: "rules"}}) {
+      nodes {
+        childMdx {
+          body
+        }
+      }
+    }
+  }
+`;
