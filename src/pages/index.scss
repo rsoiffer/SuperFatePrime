@@ -1,6 +1,14 @@
 @import url("https://fonts.googleapis.com/css2?family=Roboto&family=Teko&display=swap");
 
+$selective-yellow: #fcba04;
+$rufous: #a50104;
+$rosewood: #590004;
+$dark-sienna: #250001;
+$cultured: #f3f3f3;
+
 body {
+  background-color: $cultured;
+  color: $dark-sienna;
   font: 16px Roboto;
   margin: auto;
   max-width: 900px;
@@ -9,4 +17,5 @@ body {
 
 h1 {
   font: 48px Teko;
+  margin: 16px 0;
 }
