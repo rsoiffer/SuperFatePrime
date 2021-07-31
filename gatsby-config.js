@@ -5,8 +5,8 @@ module.exports = {
   },
 
   plugins: [
-    "gatsby-plugin-sass",
     "gatsby-plugin-mdx",
+    "gatsby-plugin-sass",
 
     {
       resolve: "gatsby-source-filesystem",

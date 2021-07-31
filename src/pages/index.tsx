@@ -1,6 +1,7 @@
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as React from "react";
+import "./index.scss";
 
 export default function IndexPage({ data }) {
   const rules = data.allFile.nodes[0].childMdx;
