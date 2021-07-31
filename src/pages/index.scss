@@ -15,7 +15,21 @@ body {
   padding: 0 20px;
 }
 
-h1 {
-  font: 48px Teko;
+h1,
+h2,
+h3 {
+  font-family: Teko;
   margin: 16px 0;
+}
+
+h1 {
+  font-size: 48px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 32px;
 }
