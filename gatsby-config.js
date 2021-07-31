@@ -7,8 +7,16 @@ module.exports = {
   pathPrefix: "/SuperFatePrime",
 
   plugins: [
-    "gatsby-plugin-mdx",
     "gatsby-plugin-sass",
+
+    {
+      resolve: "gatsby-plugin-mdx",
+      options: {
+        remarkPlugins: [
+          require("./plugins/remark-rpg")
+        ]
+      },
+    },
 
     {
       resolve: "gatsby-source-filesystem",
