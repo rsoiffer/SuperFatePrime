@@ -1,4 +1,4 @@
-@import url("https://fonts.googleapis.com/css2?family=Roboto&family=Teko&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&family=Teko&display=swap");
 
 $selective-yellow: #fcba04;
 $rufous: #a50104;
@@ -36,4 +36,11 @@ h3 {
 
 p, ol, ul {
   line-height: 28px;
+}
+
+.trait {
+  font-weight: 500;
+  font-variant: small-caps;
+  letter-spacing: 1px;
+  // color: $rosewood;
 }

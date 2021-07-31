@@ -33,5 +33,13 @@ module.exports = {
         path: "./src/rules.mdx",
       },
     },
+
+    {
+      resolve: "gatsby-source-filesystem",
+      options: {
+        name: "powers",
+        path: "./src/powers.mdx",
+      },
+    },
   ],
 };
