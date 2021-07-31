@@ -1,8 +1,10 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://www.yourdomain.tld",
+    siteUrl: "https://rsoiffer.github.io/SuperFatePrime/",
     title: "SuperFate Prime",
   },
+
+  pathPrefix: "/SuperFatePrime",
 
   plugins: [
     "gatsby-plugin-mdx",
