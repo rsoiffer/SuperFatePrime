@@ -1,20 +1,17 @@
+import "./index.scss";
 import { graphql } from "gatsby";
 import { MDXRenderer } from "gatsby-plugin-mdx";
-import { MDXProvider } from '@mdx-js/react';
 import * as React from "react";
-import "./index.scss";
+import Layout from "../components/layout";
 
 export default ({ data }) => {
   const rules = data.allFile.nodes[0].childMdx;
 
   return (
-    <main>
+    <Layout>
       <h1>SuperFate Prime</h1>
-
-      <MDXProvider components={shortcodes}>
-        <MDXRenderer>{rules.body}</MDXRenderer>
-      </MDXProvider>
-    </main>
+      <MDXRenderer>{rules.body}</MDXRenderer>
+    </Layout>
   );
 }
 
@@ -29,9 +26,3 @@ export const query = graphql`
     }
   }
 `;
-
-const shortcodes = { Die };
-
-function Die({ sides }) {
-  return <span className={`die d${sides}`}>d{sides}</span>;
-}
