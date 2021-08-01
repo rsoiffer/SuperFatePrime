@@ -1,10 +1,10 @@
-import { graphql } from "gatsby";
+import { graphql, PageProps } from "gatsby";
 import { Helmet } from "react-helmet";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as React from "react";
 import Layout from "../components/layout";
 
-export default ({ data }) => {
+export default ({ data }: PageProps<any>) => {
   const rules = data.allFile.nodes[0].childMdx;
 
   return (
