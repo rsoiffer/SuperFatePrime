@@ -1,13 +1,20 @@
 import { MDXProvider } from "@mdx-js/react";
+import { ReactNode } from "react";
 import * as React from "react";
 import * as Style from "./layout.module.scss";
 
-export default ({ children }) =>
+type LayoutProps = { children: ReactNode };
+
+type DieProps = { sides: number };
+
+type TraitProps = { name: string };
+
+export default ({ children }: LayoutProps) =>
   <MDXProvider components={shortcodes}>{children}</MDXProvider>;
 
 const shortcodes = { Die, Trait };
 
-function Die({ sides }) {
+function Die({ sides }: DieProps) {
   return (
     <span className={dieClass(sides)}>
       <span className={Style.diePrefix}>d</span>
@@ -16,7 +23,7 @@ function Die({ sides }) {
   );
 }
 
-function dieClass(sides: number): string {
+function dieClass(sides: number) {
   switch (sides) {
     case 4: return Style.d4;
     case 6: return Style.d6;
@@ -27,6 +34,6 @@ function dieClass(sides: number): string {
   }
 }
 
-function Trait({ name }) {
+function Trait({ name }: TraitProps) {
   return <span className={Style.trait}>{name}</span>;
 }

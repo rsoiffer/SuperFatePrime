@@ -27,6 +27,8 @@
     "unist-util-flatmap": "^1.0.0"
   },
   "devDependencies": {
+    "@types/mdx-js__react": "^1.5.4",
+    "@types/react-helmet": "^6.1.2",
     "gh-pages": "^3.2.3"
   }
 }
