@@ -29,16 +29,8 @@ module.exports = {
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "rules",
-        path: "./src/rules.mdx",
-      },
-    },
-
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "powers",
-        path: "./src/powers.mdx",
+        name: "documents",
+        path: "./src/documents/",
       },
     },
   ],

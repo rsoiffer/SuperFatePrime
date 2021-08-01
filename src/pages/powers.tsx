@@ -22,7 +22,7 @@ export default ({ data }) => {
 
 export const query = graphql`
   query {
-    allFile(filter: {sourceInstanceName: {eq: "powers"}}) {
+    allFile(filter: {sourceInstanceName: {eq: "documents"}, name: {eq: "powers"}}) {
       nodes {
         childMdx {
           body
