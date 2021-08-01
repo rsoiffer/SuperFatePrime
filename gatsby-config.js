@@ -3,12 +3,9 @@ module.exports = {
     siteUrl: "https://rsoiffer.github.io/SuperFatePrime/",
     title: "SuperFate Prime",
   },
-
   pathPrefix: "/SuperFatePrime",
-
   plugins: [
     "gatsby-plugin-sass",
-
     {
       resolve: "gatsby-plugin-mdx",
       options: {
@@ -17,7 +14,6 @@ module.exports = {
         ]
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
@@ -25,20 +21,11 @@ module.exports = {
         path: "./src/pages/",
       },
     },
-
     {
       resolve: "gatsby-source-filesystem",
       options: {
-        name: "rules",
-        path: "./src/rules.mdx",
-      },
-    },
-
-    {
-      resolve: "gatsby-source-filesystem",
-      options: {
-        name: "powers",
-        path: "./src/powers.mdx",
+        name: "documents",
+        path: "./src/documents/",
       },
     },
   ],

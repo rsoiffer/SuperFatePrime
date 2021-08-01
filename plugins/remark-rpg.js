@@ -13,7 +13,7 @@ function replaceDice(node) {
 
       return die === null
         ? { type: "text", value: token }
-        : { type: "jsx", value: `<Die sides="${die[1]}"/>` }
+        : { type: "jsx", value: `<Die sides={${die[1]}} />` }
     });
   }
 
@@ -31,7 +31,7 @@ function replaceTraits(node) {
       }
 
       const name = JSON.stringify(trait[1]);
-      return { type: "jsx", value: `<Trait name={${name}}/>` };
+      return { type: "jsx", value: `<Trait name={${name}} />` };
     });
   }
 
