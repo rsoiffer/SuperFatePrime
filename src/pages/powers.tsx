@@ -1,4 +1,3 @@
-import "./index.scss";
 import { graphql } from "gatsby";
 import { Helmet } from "react-helmet";
 import { MDXRenderer } from "gatsby-plugin-mdx";
