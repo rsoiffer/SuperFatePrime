@@ -7,7 +7,12 @@ export default ({ children }) =>
 const shortcodes = { Die, Trait };
 
 function Die({ sides }) {
-  return <span className={`die d${sides}`}>d{sides}</span>;
+  return (
+    <span className={`die d${sides}`}>
+      <span className="die-prefix">d</span>
+      {sides}
+    </span>
+  );
 }
 
 function Trait({ name }) {

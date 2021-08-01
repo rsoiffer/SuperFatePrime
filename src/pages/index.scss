@@ -34,13 +34,63 @@ h3 {
   font-size: 32px;
 }
 
-p, ol, ul {
+p,
+ol,
+ul {
   line-height: 28px;
 }
 
-.trait {
+.die {
+  background-color: $rufous;
+  color: $cultured;
+  display: inline-block;
+  font-size: 14px;
   font-weight: 500;
+  text-align: center;
+  width: 28px;
+}
+
+.die-prefix {
+  display: none;
+}
+
+.d4 {
+  clip-path: polygon(0% 10%, 100% 10%, 50% 90%);
+  height: 28px;
+  line-height: 24px;
+  vertical-align: middle;
+}
+
+.d6 {
+  line-height: 22px;
+  width: 22px;
+}
+
+.d8 {
+  clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
+}
+
+.d10 {
+  clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
+}
+
+.d12 {
+  clip-path: polygon(
+    50% 0%,
+    80% 10%,
+    100% 35%,
+    100% 65%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0% 65%,
+    0% 35%,
+    20% 10%
+  );
+}
+
+.trait {
   font-variant: small-caps;
+  font-weight: 500;
   letter-spacing: 1px;
-  // color: $rosewood;
 }
