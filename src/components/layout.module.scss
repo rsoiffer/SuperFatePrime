@@ -40,7 +40,11 @@ ul {
   line-height: 28px;
 }
 
-.die {
+.die-prefix {
+  display: none;
+}
+
+@mixin die {
   background-color: $rufous;
   color: $cultured;
   display: inline-block;
@@ -50,11 +54,8 @@ ul {
   width: 28px;
 }
 
-.die-prefix {
-  display: none;
-}
-
 .d4 {
+  @include die;
   clip-path: polygon(0% 10%, 100% 10%, 50% 90%);
   height: 28px;
   line-height: 24px;
@@ -62,31 +63,24 @@ ul {
 }
 
 .d6 {
+  @include die;
   line-height: 22px;
   width: 22px;
 }
 
 .d8 {
+  @include die;
   clip-path: polygon(50% 0%, 100% 50%, 50% 100%, 0% 50%);
 }
 
 .d10 {
+  @include die;
   clip-path: polygon(50% 0%, 95% 25%, 95% 75%, 50% 100%, 5% 75%, 5% 25%);
 }
 
 .d12 {
-  clip-path: polygon(
-    50% 0%,
-    80% 10%,
-    100% 35%,
-    100% 65%,
-    80% 90%,
-    50% 100%,
-    20% 90%,
-    0% 65%,
-    0% 35%,
-    20% 10%
-  );
+  @include die;
+  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 65%, 80% 90%, 50% 100%, 20% 90%, 0% 65%, 0% 35%, 20% 10%);
 }
 
 .trait {

@@ -9,14 +9,14 @@ const shortcodes = { Die, Trait };
 
 function Die({ sides }) {
   return (
-    <span className={[Style.die, sidedDieClass(sides)].join(" ")}>
+    <span className={dieClass(sides)}>
       <span className={Style.diePrefix}>d</span>
       {sides}
     </span>
   );
 }
 
-function sidedDieClass(sides: number): string {
+function dieClass(sides: number): string {
   switch (sides) {
     case 4: return Style.d4;
     case 6: return Style.d6;
