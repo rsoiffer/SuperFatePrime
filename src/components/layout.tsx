@@ -1,6 +1,6 @@
 import { Link } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
-import { ReactNode } from "react";
+import { HTMLAttributes, ReactNode } from "react";
 import * as React from "react";
 import * as Style from "./layout.module.scss";
 
@@ -13,7 +13,38 @@ type TraitProps = { name: string };
 export default ({ children }: LayoutProps) =>
   <MDXProvider components={shortcodes}>{children}</MDXProvider>;
 
-const shortcodes = { Die, Link, Trait };
+const shortcodes = {
+  h2: H2,
+  h3: H3,
+  h4: H4,
+  Die,
+  Link,
+  Trait
+};
+
+function withAnchor(id: string, children: ReactNode) {
+  return (
+    <>
+      <a href={"#" + id} className={Style.anchorLink}>
+        §
+      </a>
+      {" "}
+      {children}
+    </>
+  );
+}
+
+function H2({ id, children }: HTMLAttributes<HTMLHeadingElement>) {
+  return <h2 id={id}>{withAnchor(id, children)}</h2>;
+}
+
+function H3({ id, children }: HTMLAttributes<HTMLHeadingElement>) {
+  return <h3 id={id}>{withAnchor(id, children)}</h3>;
+}
+
+function H4({ id, children }: HTMLAttributes<HTMLHeadingElement>) {
+  return <h4 id={id}>{withAnchor(id, children)}</h4>;
+}
 
 function Die({ sides }: DieProps) {
   return (
