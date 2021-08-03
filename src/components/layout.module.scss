@@ -40,6 +40,27 @@ ul {
   line-height: 28px;
 }
 
+a {
+  color: $rufous;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}
+
+.anchor-link {
+  opacity: 0;
+  padding: 0 10px;
+  position: absolute;
+  transform: translateX(calc(-100% - 5px));
+  transition: opacity 250ms;
+
+  :hover > & {
+    opacity: 1;
+  }
+}
+
 .die-prefix {
   display: none;
 }
