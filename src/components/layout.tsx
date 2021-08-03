@@ -1,3 +1,4 @@
+import { Link } from "gatsby";
 import { MDXProvider } from "@mdx-js/react";
 import { ReactNode } from "react";
 import * as React from "react";
@@ -12,7 +13,7 @@ type TraitProps = { name: string };
 export default ({ children }: LayoutProps) =>
   <MDXProvider components={shortcodes}>{children}</MDXProvider>;
 
-const shortcodes = { Die, Trait };
+const shortcodes = { Die, Link, Trait };
 
 function Die({ sides }: DieProps) {
   return (
