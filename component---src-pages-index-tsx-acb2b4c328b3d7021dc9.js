@@ -1,0 +1,2 @@
+"use strict";(self.webpackChunksuperfly_prime=self.webpackChunksuperfly_prime||[]).push([[691],{231:function(e,l,r){r.r(l);var n=r(5414),t=r(1274),u=r(7294),a=r(7383);l.default=function(e){var l=e.data.allFile.nodes[0].childMdx;return u.createElement(a.Z,null,u.createElement(n.q,null,u.createElement("title",null,"Superfly Prime")),u.createElement("h1",null,"Superfly Prime"),u.createElement(t.MDXRenderer,null,l.body))}}}]);
+//# sourceMappingURL=component---src-pages-index-tsx-acb2b4c328b3d7021dc9.js.map
