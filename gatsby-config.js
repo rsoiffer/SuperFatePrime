@@ -1,9 +1,9 @@
 module.exports = {
   siteMetadata: {
-    siteUrl: "https://rsoiffer.github.io/SuperFatePrime/",
-    title: "SuperFate Prime",
+    siteUrl: "https://rsoiffer.github.io/SuperflyPrime/",
+    title: "Superfly Prime",
   },
-  pathPrefix: "/SuperFatePrime",
+  pathPrefix: "/SuperflyPrime",
   plugins: [
     "gatsby-plugin-sass",
     {

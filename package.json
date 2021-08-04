@@ -1,8 +1,8 @@
 {
-  "name": "super-fate-prime",
+  "name": "superfly-prime",
   "version": "1.0.0",
   "private": true,
-  "description": "SuperFate Prime",
+  "description": "Superfly Prime",
   "author": "Sarah Marshall",
   "scripts": {
     "develop": "gatsby develop",

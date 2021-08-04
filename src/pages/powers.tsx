@@ -10,10 +10,10 @@ export default ({ data }: PageProps<any>) => {
   return (
     <Layout>
       <Helmet>
-        <title>SuperFate Prime</title>
+        <title>Superfly Prime</title>
       </Helmet>
 
-      <h1>SuperFate Prime</h1>
+      <h1>Superfly Prime</h1>
       <MDXRenderer>{powers.body}</MDXRenderer>
     </Layout>
   );
