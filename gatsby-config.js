@@ -18,6 +18,7 @@ module.exports = {
       options: {
         remarkPlugins: [
           require("remark-slug"),
+          require("remark-toc"),
           require("./plugins/remark-rpg")
         ]
       },

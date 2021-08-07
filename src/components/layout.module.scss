@@ -33,7 +33,7 @@ h3 {
 }
 
 h4 {
-  margin: 1em 0 .5em 0;
+  margin: 1em 0 0.5em 0;
 }
 
 p,
@@ -103,7 +103,18 @@ a {
 
 .d12 {
   @include die;
-  clip-path: polygon(50% 0%, 80% 10%, 100% 35%, 100% 65%, 80% 90%, 50% 100%, 20% 90%, 0% 65%, 0% 35%, 20% 10%);
+  clip-path: polygon(
+    50% 0%,
+    80% 10%,
+    100% 35%,
+    100% 65%,
+    80% 90%,
+    50% 100%,
+    20% 90%,
+    0% 65%,
+    0% 35%,
+    20% 10%
+  );
 }
 
 .trait {
@@ -125,8 +136,8 @@ a {
 .trait-set-desc:not(:first-child) {
   // padding: .5em 0;
   border-top: 1px solid rgba($dark-sienna, 30%);
-  padding-top: .5em;
-  margin-top: .5em;
+  padding-top: 0.5em;
+  margin-top: 0.5em;
 }
 
 .trait-set-limit {
@@ -166,6 +177,84 @@ a {
 .top-bar-entry {
   display: inline-block;
   margin: 8px 24px;
+}
+
+.table-of-contents {
+  position: fixed;
+  top: 150px;
+  background-color: darken($cultured, 7%);
+  border: 1px solid rgba($dark-sienna, 30%);
+  box-sizing: border-box;
+  border-left: none;
+  z-index: 2;
+  line-height: 28px;
+  right: calc(100% - 300px);
+  width: 300px;
+  overflow-x: hidden;
+  transition: right 0.5s;
+  padding: 8px 8px 24px 32px;
+
+  a {
+    color: $dark-sienna;
+  }
+}
+
+.table-of-contents-closed {
+  right: 100%;
+}
+
+.open-toc-button {
+  position: fixed;
+  top: 150px;
+  z-index: 1;
+  line-height: 28px;
+
+  button {
+    cursor: pointer;
+    width: 64px;
+    height: 64px;
+    background-color: $rufous;
+    color: $cultured;
+    border: 1px solid rgba($dark-sienna, 30%);
+    border-left: none;
+    border-radius: 0 20px 20px 0;
+  }
+}
+
+.table-of-contents-header {
+  font: 24px Teko;
+  font-weight: 700;
+  border-bottom: 1px solid rgba($dark-sienna, 15%);
+  margin-bottom: 8px;
+
+  button {
+    cursor: pointer;
+    float: right;
+    width: 48px;
+    height: 48px;
+    padding: 8px;
+    margin: -8px;
+    background-color: transparent;
+    color: $dark-sienna;
+    border: none;
+  }
+}
+
+.toc1 {
+  font-weight: 700;
+}
+
+.toc2 {
+  font-weight: 700;
+}
+
+.toc3 {
+  padding-left: 16px;
+}
+
+.toc4 {
+  padding-left: 32px;
+  font-style: italic;
 }
 
 .main-content {
