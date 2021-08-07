@@ -1,10 +1,13 @@
+import YAMLData from "../data/example-characters.yaml";
+import * as styles from "../components/layout.module.scss";
+
 ## The Basics
 
 In Superfly Prime, you play as a powerful superhero, someone who defends the city against criminals, giant robots, and supervillains. Your character will cooperate with other superheroes as you work together to save the day. As you play the game, you describe what actions your character takes in each scene, and everyone’s actions come together to make a story.
 
 One player takes the role of the Game Master (GM). The GM doesn’t play a single character, but instead plays as the entire rest of the world. The GM describes the setting, plays as all the enemies, and narrates the results of all the players’ actions. The GM is like an impartial judge – their goal isn’t to defeat the players, but to enforce the rules and to keep the game running.
 
-Your character is defined by your character sheet, a piece of paper where you write down who your character is and what they can do. Your character sheet lists several Traits. Each Trait describes how effective your character at certain actions. A Trait consists of a name (written in {Fancy Text}), which broadly describes the actions it’s relevant for, and a die type, which describes how good your character is in that area. Larger dice are better: a Trait rated d4 is very weak, while a Trait rated d12 is incredibly strong. Most Traits are in between, and are rated d6, d8, or d10.
+Your character is defined by your character sheet, a piece of paper where you write down who your character is and what they can do. Your character sheet lists several Traits. Each Trait describes how effective your character at certain actions. A Trait consists of a name (written in {Fancy Text}), which broadly describes the actions it’s relevant for, and a die type, which describes how good your character is in that area. Superfly Prime uses symbols to represent die types: for example, d6 represents a six-sided die, while d12 represents a twelve-sided die. Larger dice are better: a Trait rated d4 is very weak, while a Trait rated d12 is incredibly strong. Most Traits are in between, and are rated d6, d8, or d10.
 
 When your character tries to do something that has a chance of failure, such as punching out a giant robot or inventing an amazing new technology, you roll dice to see if your action succeeds. Every die roll in Superfly Prime works in the same way.
 1. Find all the Traits on your character sheet that could help you with the action, except you can’t pick two Traits from the same category
@@ -17,11 +20,11 @@ If you want to jump right into the action, then go ahead! The above is all you n
 #### Character Creation Quick Reference
 
 The GM sets a Power Level (PL), and players get that many Build Points (BP) to spend on abilities
-* Distinctions – 3 chosen by the player – d8, d8, d8
-* Approaches – {Careful}, {Clever}, {Flashy}, {Forceful}, {Quick}, {Sneaky} – d10, d8, d8, d6, d6, d4
-* Powers – any number, 1, 2, or 3 BP each – d6, d8, or d10
-* Specialties – any number, 1 BP each – d8
-* Resources – any number, 1 BP each – d8 d8
+* [Distinctions](#distinctions) – 3 chosen by the player – d8, d8, d8
+* [Approaches](#approches) – {Careful}, {Clever}, {Flashy}, {Forceful}, {Quick}, {Sneaky} – d10, d8, d8, d6, d6, d4
+* [Powers](#powers) – any number, 1, 2, or 3 BP each – d6, d8, or d10
+* [Specialties](#specialties) – any number, 1 BP each – d8
+* [Resources](#resources) – any number, 1 BP each – d8 d8
 
 
 
@@ -45,11 +48,11 @@ Your character has three distinctions of your choice. Distinctions are always ra
 Each distinction should be a 2 to 5 word phrase that describes an important part of your character. Distinctions can cover everything from your character’s backstory and skills to their personality and ideals. For example, Tony Stark from the Marvel Cinematic Universe would have the following distinctions:
 * {Genius Weapons Engineer} d8
 * {Billionaire Playboy Philanthropist} d8
-* {Biggest Ego in the Room} d8
+* {Giant Ego} d8
 
 Your distinctions can be extremely broad. One of your distinctions should apply to almost every action you take. The GM should be very lenient when judging whether it makes narrative sense for a distinction to apply to a given die roll.
 
-Your distinctions don’t all have to be positive things about your character, they can also be the things that get your character into trouble. For example, Tony Stark’s {Biggest Ego In the Room} distinction causes a lot of social problems for his character. This works well with the **Hinder** mechanic described later.
+Your distinctions don’t all have to be positive things about your character, they can also be the things that get your character into trouble. For example, Tony Stark’s {Giant Ego} distinction causes a lot of social problems for his character. This works well with the **Hinder** mechanic described later.
 
 ### Approaches
 
@@ -97,7 +100,7 @@ See the <Link to="/powers">Powers List</Link> page for more details.
 * [Reflexes](powers#reflexes): reaction time, coordination
 * [Resistance](powers#resistance): vs sonic, poison, psychic, fire, etc.
 * [Senses](powers#senses): vision, hearing, touch, weird senses
-* [Shapeshift](powers#shapeshift): changing shape, copying other ’s appearance
+* [Shapeshift](powers#shapeshift): changing shape, copying other’s appearance
 * [Size-Changing](powers#size-changing): grow, shrink
 * [Sorcery](powers#sorcery): creating magical assets
 * [Stamina](powers#stamina): endurance, staying power
@@ -232,187 +235,3 @@ Limitations: All superpowers have limits. Superman is weak to kryptonite, Hawkey
 
 
 ## Example Characters
-
-### Iron Man (PL 15)
-
-Distinctions:
-* {Genius Weapons Engineer} d8
-* {Billionaire Playboy Philanthropist} d8
-* {Biggest Ego in the Room} d8
-
-Approaches:
-* {Careful} d6
-* {Clever} d8
-* {Flashy} d10
-* {Forceful} d8
-* {Quick} d6
-* {Sneaky} d4
-
-Powers:
-* *Iron Man is a natural technology genius. Limitation: his intelligence doesn't do him much good in social situations.*
-* {Superhuman Intelligence} d8
-* *Iron Man's mechanical suit is built to have amazing speed and power. Limitation: these powers only work while wearing the suit.*
-* {Repulsor Blasts} d10
-* {Superhuman Durability} d8
-* {Supersonic Flight} d10
-* {Enhanced Strength} d6
-
-Specialties:
-* {Business} d8
-* {Computers} d8
-* {Engineering} d8
-
-Resources:
-* {Rockets} d8 d8
-
-### Thor (PL 15)
-
-Distinctions:
-* {Prince of Asgard} d8
-* {God of Thunder} d8
-* {Act First, Think Later} d8
-
-Approaches:
-* {Careful} d4
-* {Clever} d6
-* {Flashy} d8
-* {Forceful} d10
-* {Quick} d8
-* {Sneaky} d6
-
-Powers:
-* *Thor's powers come from his Asgardian physiology and from the magic hammer Mjolnir. Limitation: Thor loses most of his powers if he is deemed unworthy of Mjolnir.*
-* {Lightning Bolts} d10
-* {Incredible Durability} d10
-* {Subsonic Flight} d8
-* {Enhanced Stamina} d6
-* {Incredible Strength} d10
-
-Specialties:
-* {Asgardian Knowledge} d8
-
-Resources:
-* {Enhanced Strikes} d8 d8
-* {Lightning Magic} d8 d8
-
-### The Hulk (PL 15)
-
-Distinctions:
-* {Big Green Monster} d8
-* {Renowned Scientist} d8
-* {I’m Always Angry} d8
-
-Approaches:
-* {Careful} d6
-* {Clever} d8
-* {Flashy} d8
-* {Forceful} d10
-* {Quick} d6
-* {Sneaky} d4
-
-Powers:
-* *Bruce Banner is a gifted scientist and researcher. Limitation: Banner loses his intelligence when he transforms into the Hulk.*
-* {Superhuman Intelligence} d8
-* *The Hulk is incredible strong and durable. Limitation: the Hulk loses his strength when he transforms into Bruce Banner.*
-* {Incredible Durability} d10
-* {Giant Leaps} d8
-* {Superhuman Stamina} d8
-* {Incredible Strength} d10
-
-Specialties:
-* {Medicine} d8
-* {Nuclear Physics} d8
-
-Resources:
-* {Repressed Anger} d8 d8
-
-### Black Widow (PL 12)
-
-Distinctions:
-* {Former Soviet Spy} d8
-* {Master Assassin} d8
-* {Regrets Her Past} d8
-
-Approaches:
-* {Careful} d8
-* {Clever} d6
-* {Flashy} d6
-* {Forceful} d4
-* {Quick} d8
-* {Sneaky} d10
-
-Powers:
-* *Black Widow has amazing skills from her training as a spy. Limitation: she is only human, and can't do anything greatly beyond normal human limits.*
-* {Martial Arts} d6
-* {Slight Invisibility} d6
-* {Enhanced Speed} d6
-* {Emotion Manipulation} d10
-* {Enhanced Reflexes} d6
-* {Enhanced Senses} d6
-
-Specialties:
-* {Escape Artist} d8
-* {Infiltration} d8
-* {Interrogation} d8
-* {Persuasion} d8
-
-### Hawkeye (PL 12)
-
-Distinctions:
-* {Greatest Living Marksman} d8
-* {Veteran SHIELD Agent} d8
-* {Stoic Professional} d8
-
-Approaches:
-* {Careful} d10
-* {Clever} d6
-* {Flashy} d4
-* {Forceful} d6
-* {Quick} d8
-* {Sneaky} d8
-
-Powers:
-* *Hawkeye has amazing skills from his training as an agent. Limitation: he is only human, and can't do anything greatly beyond normal human limits.*
-* {Martial Arts} d6
-* {High-Tech Arrows} d8
-* {Grappling Hook} d6
-* {Incredible Reflexes} d10
-* {Superhuman Senses} d8
-
-Specialties:
-* {Infiltration} d8
-
-Resources:
-* {Explosive Arrows} d8 d8
-* {Electrical Arrows} d8 d8
-
-### Captain America (PL 14)
-
-Distinctions:
-* {Legendary Super Soldier} d8
-* {Symbol of America} d8
-* {Frozen Since WW2} d8
-
-Approaches:
-* {Careful} d8
-* {Clever} d4
-* {Flashy} d8
-* {Forceful} d10
-* {Quick} d6
-* {Sneaky} d6
-
-Powers:
-* *Captain America has enhanced physical abilities from the super-soldier serum. Limitation: his main attacks and defenses only work while he has his shield.*
-* {Shield Throw} d8
-* {Incredible Durability} d10
-* {Enhanced Speed} d6
-* {Enhanced Reflexes} d6
-* {Enhanced Senses} d6
-* {Enhanced Stamina} d6
-* {Superhuman Strength} d8
-
-Specialties:
-* {Leadership} d8
-
-Resources:
-* {Vibranium Shield} d8 d8 d8 d8

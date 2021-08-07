@@ -46,7 +46,7 @@ function H4({ id, children }: HTMLAttributes<HTMLHeadingElement>) {
   return <h4 id={id}>{withAnchor(id, children)}</h4>;
 }
 
-function Die({ sides }: DieProps) {
+export function Die({ sides }: DieProps) {
   return (
     <span className={dieClass(sides)}>
       <span className={Style.diePrefix}>d</span>
@@ -66,6 +66,6 @@ function dieClass(sides: number) {
   }
 }
 
-function Trait({ name }: TraitProps) {
+export function Trait({ name }: TraitProps) {
   return <span className={Style.trait}>{name}</span>;
 }

@@ -3,6 +3,8 @@
     "typeRoots": [
       "./@types"
     ],
-    "jsx": "react"
+    "jsx": "react",
+    "esModuleInterop": true,
+    "allowSyntheticDefaultImports": true,
   }
 }

@@ -34,6 +34,10 @@ h3 {
   font-size: 32px;
 }
 
+h4 {
+  margin: 1em 0 .5em 0;
+}
+
 p,
 ol,
 ul {
@@ -108,4 +112,34 @@ a {
   font-variant: small-caps;
   font-weight: 500;
   letter-spacing: 1px;
+}
+
+.trait-set {
+  // width: 350px;
+  // border: 1px solid mix($dark-sienna, $cultured, 30%);
+  padding: 10px 16px 8px 16px;
+  margin-bottom: 1em;
+  line-height: 28px;
+  border-radius: 10px;
+  background-color: darken($cultured, 7%);
+}
+
+.trait-set-desc:not(:first-child) {
+  // padding: .5em 0;
+  border-top: 1px solid rgba($dark-sienna, 30%);
+  padding-top: .5em;
+  margin-top: .5em;
+}
+
+.trait-set-limit {
+  font-style: italic;
+}
+
+.trait-set-entry {
+  // padding: .5em 0;
+  // font-variant: small-caps;
+  // font-weight: 500;
+  // letter-spacing: 1px;
+  display: inline-block;
+  margin-right: 24px;
 }

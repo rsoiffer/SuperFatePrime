@@ -1,0 +1,208 @@
+characters:
+
+- name: Iron Man
+  pl: 15
+  distinctions:
+  - Genius Weapons Engineer d8
+  - Billionaire Playboy Philanthropist d8
+  - Giant Ego d8
+  approaches:
+  - Careful d6
+  - Clever d8
+  - Flashy d10
+  - Forceful d8
+  - Quick d6
+  - Sneaky d4
+  powers:
+  - desc: Iron Man is a natural technology genius.
+    limit: His intelligence doesn't do him much good in social situations.
+    traits:
+    - Superhuman Intelligence d8
+  - desc: Iron Man's mechanical suit is built to have amazing speed and power.
+    limit: These powers only work while wearing the suit.
+    traits:
+    - Repulsor Blasts d10
+    - Superhuman Durability d8
+    - Supersonic Flight d10
+    - Enhanced Strength d6
+  specialties:
+  - Business d8
+  - Computers d8
+  - Engineering d8
+  resources:
+  - Rockets d8 d8
+
+- name: Thor
+  pl: 15
+  distinctions:
+  - Prince of Asgard d8
+  - God of Thunder d8
+  - Act First, Think Later d8
+  approaches:
+  - Careful d4
+  - Clever d6
+  - Flashy d8
+  - Forceful d10
+  - Quick d8
+  - Sneaky d6
+  powers:
+  - desc: Thor's powers come from his Asgardian physiology and from the magic hammer Mjolnir.
+    limit: Thor loses most of his powers if he is deemed unworthy of Mjolnir.
+    traits:
+    - Lightning Bolts d10
+    - Incredible Durability d10
+    - Subsonic Flight d8
+    - Enhanced Stamina d6
+    - Incredible Strength d10
+  specialties:
+  - Asgardian Knowledge d8
+  resources:
+  - Enhanced Strikes d8 d8
+  - Lightning Magic d8 d8
+
+- name: The Hulk
+  pl: 15
+  distinctions:
+  - Big Green Monster d8
+  - Renowned Scientist d8
+  - I’m Always Angry d8
+  approaches:
+  - Careful d6
+  - Clever d8
+  - Flashy d8
+  - Forceful d10
+  - Quick d6
+  - Sneaky d4
+  powers:
+  - desc: Bruce Banner is a gifted scientist and researcher.
+    limit: Banner loses his intelligence when he transforms into the Hulk.
+    traits:
+    - Superhuman Intelligence d8
+  - desc: The Hulk is incredibly strong and durable.
+    limit: The Hulk loses his strength when he transforms into Bruce Banner.
+    traits:
+    - Incredible Durability d10
+    - Giant Leaps d8
+    - Superhuman Stamina d8
+    - Incredible Strength d10
+  specialties:
+  - Medicine d8
+  - Nuclear Physics d8
+  resources:
+  - Repressed Anger d8 d8
+
+- name: Black Widow
+  pl: 12
+  distinctions:
+  - Former Soviet Spy d8
+  - Master Assassin d8
+  - Regrets Her Past d8
+  approaches:
+  - Careful d8
+  - Clever d6
+  - Flashy d6
+  - Forceful d4
+  - Quick d8
+  - Sneaky d10
+  powers:
+  - desc: Black Widow has amazing skills from her training as a spy.
+    limit: She is only human, and can't do anything greatly beyond normal human limits.
+    traits:
+    - Martial Arts d6
+    - Slight Invisibility d6
+    - Enhanced Speed d6
+    - Emotion Manipulation d10
+    - Enhanced Reflexes d6
+    - Enhanced Senses d6
+  specialties:
+  - Escape Artist d8
+  - Infiltration d8
+  - Interrogation d8
+  - Persuasion d8
+  resources: []
+
+- name: Hawkeye
+  pl: 12
+  distinctions:
+  - Greatest Living Marksman d8
+  - Veteran SHIELD Agent d8
+  - Stoic Professional d8
+  approaches:
+  - Careful d10
+  - Clever d6
+  - Flashy d4
+  - Forceful d6
+  - Quick d8
+  - Sneaky d8
+  powers:
+  - desc: Hawkeye has amazing skills from his training as an agent.
+    limit: He is only human, and can't do anything greatly beyond normal human limits.
+    traits:
+    - Martial Arts d6
+    - High-Tech Arrows d8
+    - Grappling Hook d6
+    - Incredible Reflexes d10
+    - Superhuman Senses d8
+  specialties:
+  - Infiltration d8
+  resources:
+  - Explosive Arrows d8 d8
+  - Electrical Arrows d8 d8
+
+- name: Captain America
+  pl: 14
+  distinctions:
+  - Legendary Super Soldier d8
+  - Symbol of America d8
+  - Frozen Since WW2 d8
+  approaches:
+  - Careful d8
+  - Clever d4
+  - Flashy d8
+  - Forceful d10
+  - Quick d6
+  - Sneaky d6
+  powers:
+  - desc: Captain America has enhanced physical abilities from the super-soldier serum.
+    limit: His main attacks and defenses only work while he has his shield.
+    traits:
+    - Shield Throw d8
+    - Incredible Durability d10
+    - Enhanced Speed d6
+    - Enhanced Reflexes d6
+    - Enhanced Senses d6
+    - Enhanced Stamina d6
+    - Superhuman Strength d8
+  specialties:
+  - Leadership d8
+  resources:
+  - Vibranium Shield d8 d8 d8 d8
+
+- name: Loki
+  pl: 14
+  distinctions:
+  - God of Mischief d8
+  - Adopted Son of Odin d8
+  - Burdened with Glorious Purpose d8
+  approaches:
+  - Careful d6
+  - Clever d10
+  - Flashy d8
+  - Forceful d4
+  - Quick d6
+  - Sneaky d8
+  powers:
+  - desc: Loki's powers come from his frost giant physiology and from his mastery of magic.
+    limit: Loki loses his powers when he can't access his magic.
+    traits:
+    - Daggers d6
+    - Superhuman Durability d8
+    - Enhanced Intelligence d6
+    - Full Invisibility d10
+    - Superhuman Reflexes d8
+    - Illusion Magic d8
+    - Enhanced Strength d6
+  specialties:
+  - Infiltration d8
+  - Persuasion d8
+  resources: []
