@@ -54,10 +54,9 @@ characters:
     - Subsonic Flight d8
     - Enhanced Stamina d6
     - Incredible Strength d10
-  specialties:
-  - Asgardian Knowledge d8
+  specialties: []
   resources:
-  - Enhanced Strikes d8 d8
+  - Power of Mjolnir d8 d8 d8 d8
   - Lightning Magic d8 d8
 
 - name: The Hulk

@@ -1,4 +1,4 @@
-import { graphql, PageProps } from "gatsby";
+import { graphql, PageProps, Link } from "gatsby";
 import { Helmet } from "react-helmet";
 import { MDXRenderer } from "gatsby-plugin-mdx";
 import * as React from "react";
@@ -30,59 +30,75 @@ export default ({ data }: PageProps<any>) => {
         <title>Superfly Prime</title>
       </Helmet>
 
-      <h1>Superfly Prime</h1>
-      <MDXRenderer>{rules.body}</MDXRenderer>
-
-      {YAMLData.characters.map((char, index) => {
-        return <div className="character">
-          <h3>{char.name} (PL {char.pl})</h3>
-
-          <h4>Distinctions</h4>
-          <div className={styles.traitSet}>
-            {char.distinctions.map((trait, index) => {
-              return traitEntry(trait)
-            })}
+      <div className={styles.topBar}>
+        <div className={styles.topBarEntry}>Superfly Prime</div>
+        <div className={styles.topBarRight}>
+          <div className={styles.topBarEntry}>
+            <Link to="/">Home</Link>
           </div>
-
-          <h4>Approaches</h4>
-          <div className={styles.traitSet}>
-            {char.approaches.map((trait, index) => {
-              return traitEntry(trait)
-            })}
+          <div className={styles.topBarEntry}>
+            <Link to="powers">Powers</Link>
           </div>
-
-          <h4>Powers</h4>
-          <div className={styles.traitSet}>
-            {char.powers.flatMap((powerset, index) => {
-              return [
-                <div className={styles.traitSetDesc}>{powerset.desc}</div>,
-                <div className={styles.traitSetLimit}>Limitation: {powerset.limit}</div>,
-                powerset.traits.map((trait, index) => {
-                  return traitEntry(trait)
-                })
-              ]
-            })}
-          </div>
-
-          <h4>Specialties</h4>
-          <div className={styles.traitSet}>
-            {char.specialties.length != 0
-              ? char.specialties.map((trait, index) => {
-                return traitEntry(trait)
-              })
-              : <i>None</i>}
-          </div>
-
-          <h4>Resources</h4>
-          <div className={styles.traitSet}>
-            {char.resources.length != 0
-              ? char.resources.map((trait, index) => {
-                return traitEntry(trait)
-              })
-              : <i>None</i>}
+          <div className={styles.topBarEntry}>
+            <Link to="rules">Rules</Link>
           </div>
         </div>
-      })}
+      </div>
+
+      <div className={styles.mainContent}>
+        <MDXRenderer>{rules.body}</MDXRenderer>
+
+        {YAMLData.characters.map((char, index) => {
+          return <div className={styles.character}>
+            <h3>{char.name} (PL {char.pl})</h3>
+
+            <h4>Distinctions</h4>
+            <div className={styles.traitSet}>
+              {char.distinctions.map((trait, index) => {
+                return traitEntry(trait)
+              })}
+            </div>
+
+            <h4>Approaches</h4>
+            <div className={styles.traitSet}>
+              {char.approaches.map((trait, index) => {
+                return traitEntry(trait)
+              })}
+            </div>
+
+            <h4>Powers</h4>
+            <div className={styles.traitSet}>
+              {char.powers.flatMap((powerset, index) => {
+                return [
+                  <div className={styles.traitSetDesc}>{powerset.desc}</div>,
+                  <div className={styles.traitSetLimit}>Limitation: {powerset.limit}</div>,
+                  powerset.traits.map((trait, index) => {
+                    return traitEntry(trait)
+                  })
+                ]
+              })}
+            </div>
+
+            <h4>Specialties</h4>
+            <div className={styles.traitSet}>
+              {char.specialties.length != 0
+                ? char.specialties.map((trait, index) => {
+                  return traitEntry(trait)
+                })
+                : <i>None</i>}
+            </div>
+
+            <h4>Resources</h4>
+            <div className={styles.traitSet}>
+              {char.resources.length != 0
+                ? char.resources.map((trait, index) => {
+                  return traitEntry(trait)
+                })
+                : <i>None</i>}
+            </div>
+          </div>
+        })}
+      </div>
     </Layout>
   );
 }

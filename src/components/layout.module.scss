@@ -11,8 +11,6 @@ body {
   color: $dark-sienna;
   font: 16px Roboto;
   margin: auto;
-  max-width: 800px;
-  padding: 0 20px;
 }
 
 h1,
@@ -136,10 +134,43 @@ a {
 }
 
 .trait-set-entry {
-  // padding: .5em 0;
-  // font-variant: small-caps;
-  // font-weight: 500;
-  // letter-spacing: 1px;
   display: inline-block;
   margin-right: 24px;
+}
+
+.character {
+  margin: 32px 0;
+}
+
+.top-bar {
+  font-family: Teko;
+  font-size: 40px;
+  font-weight: 700;
+  border-bottom: 1px solid rgba($dark-sienna, 30%);
+  padding: 0 24px;
+  background-color: darken($cultured, 7%);
+
+  top: 0;
+  position: sticky;
+  z-index: 1;
+}
+
+// .top-bar a {
+//   color: $dark-sienna !important;
+// }
+
+.top-bar-right {
+  float: right;
+}
+
+.top-bar-entry {
+  display: inline-block;
+  margin: 8px 24px;
+}
+
+.main-content {
+  margin: auto;
+  max-width: 800px;
+  margin-top: 32px;
+  margin-bottom: 64px;
 }
