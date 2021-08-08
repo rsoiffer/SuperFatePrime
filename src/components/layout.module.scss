@@ -262,4 +262,9 @@ a {
   max-width: 800px;
   margin-top: 32px;
   margin-bottom: 64px;
+  transition: padding-left 0.5s;
+}
+
+.main-content-toc-open {
+  padding-left: 300px;
 }

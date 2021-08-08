@@ -69,3 +69,21 @@ function dieClass(sides: number) {
 export function Trait({ name }: TraitProps) {
   return <span className={Style.trait}>{name}</span>;
 }
+
+export function TopBar() {
+  return (
+    <div className={Style.topBar}>
+      <div className={Style.topBarEntry}>Superfly Prime</div>
+      <div className={Style.topBarRight}>
+        <div className={Style.topBarEntry}>
+          <Link to="/">Home</Link>
+        </div>
+        <div className={Style.topBarEntry}>
+          <Link to="/powers">Powers</Link>
+        </div>
+        {/* <div className={Style.topBarEntry}>
+          <Link to="/rules">Rules</Link>
+        </div> */}
+      </div>
+    </div>)
+}
