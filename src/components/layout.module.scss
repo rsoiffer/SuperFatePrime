@@ -164,11 +164,12 @@ a {
   top: 0;
   position: sticky;
   z-index: 1;
-}
 
-// .top-bar a {
-//   color: $dark-sienna !important;
-// }
+  @media screen and (max-width: 900px) {
+    font-size: 28px;
+    padding: 0 8px;
+  }
+}
 
 .top-bar-right {
   float: right;
@@ -177,6 +178,10 @@ a {
 .top-bar-entry {
   display: inline-block;
   margin: 8px 24px;
+
+  @media screen and (max-width: 900px) {
+    margin: 8px 8px;
+  }
 }
 
 .table-of-contents {
@@ -184,8 +189,8 @@ a {
   top: 150px;
   background-color: darken($cultured, 7%);
   border: 1px solid rgba($dark-sienna, 30%);
-  box-sizing: border-box;
   border-left: none;
+  box-sizing: border-box;
   z-index: 2;
   line-height: 28px;
   right: calc(100% - 300px);
@@ -197,10 +202,24 @@ a {
   a {
     color: $dark-sienna;
   }
+
+  @media screen and (max-width: 900px) {
+    top: 80px;
+    right: auto;
+    left: calc(100% - 300px);
+    transition: left 0.5s;
+    border: 1px solid rgba($dark-sienna, 30%);
+    border-right: none;
+  }
 }
 
 .table-of-contents-closed {
   right: 100%;
+
+  @media screen and (max-width: 900px) {
+    right: auto;
+    left: 100%;
+  }
 }
 
 .open-toc-button {
@@ -218,6 +237,15 @@ a {
     border: 1px solid rgba($dark-sienna, 30%);
     border-left: none;
     border-radius: 0 20px 20px 0;
+  }
+
+  @media screen and (max-width: 900px) {
+    top: 80px;
+    right: 0;
+
+    button {
+      border-radius: 20px 0 0 20px;
+    }
   }
 }
 
@@ -259,12 +287,18 @@ a {
 
 .main-content {
   margin: auto;
-  max-width: 800px;
+  max-width: 840px;
   margin-top: 32px;
   margin-bottom: 64px;
   transition: padding-left 0.5s;
+  padding-left: 20px;
+  padding-right: 20px;
 }
 
 .main-content-toc-open {
   padding-left: 300px;
+
+  @media screen and (max-width: 900px) {
+    padding-left: 20px;
+  }
 }

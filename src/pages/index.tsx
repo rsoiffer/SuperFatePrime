@@ -24,7 +24,7 @@ function traitEntry(trait) {
 
 export default ({ data }: PageProps<any>) => {
   const rules = data.allFile.nodes[0].childMdx;
-  const [tocOpen, setTocOpen] = React.useState(true);
+  const [tocOpen, setTocOpen] = React.useState(false);
 
   return (
     <Layout>

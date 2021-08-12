@@ -8,7 +8,7 @@ import { Toc } from "../components/table-of-contents";
 
 export default ({ data }: PageProps<any>) => {
   const powers = data.allFile.nodes[0].childMdx;
-  const [tocOpen, setTocOpen] = React.useState(true);
+  const [tocOpen, setTocOpen] = React.useState(false);
 
   return (
     <Layout>
