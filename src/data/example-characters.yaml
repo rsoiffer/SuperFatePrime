@@ -3,9 +3,9 @@ characters:
 - name: Iron Man
   pl: 15
   distinctions:
-  - Genius Weapons Engineer d8
+  - Genius Weapons Engineer d10
   - Billionaire Playboy Philanthropist d8
-  - Giant Ego d8
+  - Giant Ego d6
   approaches:
   - Careful d6
   - Clever d8
@@ -24,20 +24,19 @@ characters:
     - Repulsor Blasts d10
     - Superhuman Durability d8
     - Supersonic Flight d10
+    - Enhanced Senses d6
     - Enhanced Strength d6
   specialties:
   - Business d8
   - Computers d8
   - Engineering d8
-  resources:
-  - Rockets d8 d8
 
 - name: Thor
   pl: 15
   distinctions:
+  - God of Thunder d10
   - Prince of Asgard d8
-  - God of Thunder d8
-  - Act First, Think Later d8
+  - Act First, Think Later d6
   approaches:
   - Careful d4
   - Clever d6
@@ -54,17 +53,17 @@ characters:
     - Subsonic Flight d8
     - Enhanced Stamina d6
     - Incredible Strength d10
-  specialties: []
-  resources:
-  - Power of Mjolnir d8 d8 d8 d8
-  - Lightning Magic d8 d8
+  specialties:
+  - Asgardian Connections d8
+  - Astrophysics d8
+  - Leadership d8
 
 - name: The Hulk
   pl: 15
   distinctions:
-  - Big Green Monster d8
+  - Big Green Monster d10
   - Renowned Scientist d8
-  - I’m Always Angry d8
+  - I’m Always Angry d6
   approaches:
   - Careful d6
   - Clever d8
@@ -85,17 +84,16 @@ characters:
     - Superhuman Stamina d8
     - Incredible Strength d10
   specialties:
+  - Computers d8
   - Medicine d8
   - Nuclear Physics d8
-  resources:
-  - Repressed Anger d8 d8
 
 - name: Black Widow
   pl: 12
   distinctions:
-  - Former Soviet Spy d8
+  - Former Soviet Spy d10
   - Master Assassin d8
-  - Regrets Her Past d8
+  - Regrets Her Past d6
   approaches:
   - Careful d8
   - Clever d6
@@ -118,14 +116,13 @@ characters:
   - Infiltration d8
   - Interrogation d8
   - Persuasion d8
-  resources: []
 
 - name: Hawkeye
   pl: 12
   distinctions:
-  - Greatest Living Marksman d8
+  - Greatest Living Marksman d10
   - Veteran SHIELD Agent d8
-  - Stoic Professional d8
+  - Stoic Professional d6
   approaches:
   - Careful d10
   - Clever d6
@@ -143,17 +140,16 @@ characters:
     - Incredible Reflexes d10
     - Superhuman Senses d8
   specialties:
+  - Government Connections d8
   - Infiltration d8
-  resources:
-  - Explosive Arrows d8 d8
-  - Electrical Arrows d8 d8
+  - Investigation d8
 
 - name: Captain America
   pl: 14
   distinctions:
-  - Legendary Super Soldier d8
+  - Legendary Super Soldier d10
   - Symbol of America d8
-  - Frozen Since WW2 d8
+  - Frozen Since WW2 d6
   approaches:
   - Careful d8
   - Clever d4
@@ -173,16 +169,16 @@ characters:
     - Enhanced Stamina d6
     - Superhuman Strength d8
   specialties:
+  - Government Connections d8
   - Leadership d8
-  resources:
-  - Vibranium Shield d8 d8 d8 d8
+  - Popularity d8
 
 - name: Loki
   pl: 14
   distinctions:
-  - God of Mischief d8
+  - God of Mischief d10
   - Adopted Son of Odin d8
-  - Burdened with Glorious Purpose d8
+  - Burdened with Glorious Purpose d6
   approaches:
   - Careful d6
   - Clever d10
@@ -204,4 +200,3 @@ characters:
   specialties:
   - Infiltration d8
   - Persuasion d8
-  resources: []

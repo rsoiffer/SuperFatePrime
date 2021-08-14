@@ -78,15 +78,6 @@ export default ({ data }: PageProps<any>) => {
                 })
                 : <i>None</i>}
             </div>
-
-            <h4>Resources</h4>
-            <div className={styles.traitSet}>
-              {char.resources.length != 0
-                ? char.resources.map((trait, index) => {
-                  return traitEntry(trait)
-                })
-                : <i>None</i>}
-            </div>
           </div>
         })}
       </div>
