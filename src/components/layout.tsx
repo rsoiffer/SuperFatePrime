@@ -82,7 +82,7 @@ export function TopBar() {
           <Link to="/powers">Powers</Link>
         </div>
         {/* <div className={Style.topBarEntry}>
-          <Link to="/rules">Rules</Link>
+          <Link to="/gm-section">GM Section</Link>
         </div> */}
       </div>
     </div>)

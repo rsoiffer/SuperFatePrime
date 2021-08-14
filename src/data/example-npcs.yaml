@@ -1,0 +1,100 @@
+characters:
+
+- name: Bamos, He Who Annihilates
+  distinctions:
+  - Lord of the Negative Zone d12
+  - Immortal Insect Titan d12
+  - Vain and Sarcastic d12
+  approaches:
+  - Careful d6
+  - Clever d4
+  - Flashy d8
+  - Forceful d10
+  - Quick d8
+  - Sneaky d6
+  powers:
+  - desc: Bamos is an alien god who has conquered an entire reality. Now he's come for yours. Good luck.
+    limit: Bamos's power comes in-part from the magic artifact he holds, the Cosmic Control Rod. He's weaker without it. Slightly. You're still probably fucked.
+    traits:
+    - Godlike Durability d12
+    - Mimic d12
+    - Subsonic Flight d8
+    - Fear Projection d8
+    - Godlike Stamina d12
+    - Superhuman Strength d8
+  specialties:
+  - Leadership d8
+  - Xenobiology d8
+  resources:
+  - Cosmic Control Rod d8 d8 d8 d8
+
+- name: Girros, Insectovore
+  distinctions:
+  - Lieutenant of Terror d8
+  - Omnivorous Insect d8
+  - Obnoxiously Subservient d8
+  approaches:
+  - Careful d4
+  - Clever d8
+  - Flashy d6
+  - Forceful d6
+  - Quick d10
+  - Sneaky d8
+  powers:
+  - desc: Girros has superhuman physical abilities from his insect biology.
+    limit: Girros's powers stop working if he's starved of food.
+    traits:
+    - Enhanced Durability d6
+    - Subsonic Flight d8
+    - Shapeshift d6
+    - Superhuman Stamina d8
+    - Superhuman Strength d8
+  specialties:
+  - Xenobiology d8
+  resources:
+  - New Mutation d8 d8
+
+- name: Thranus, Voice of the Swarm
+  distinctions:
+  - Hive Mind Commander d8
+  - Tactical and Adaptable d8
+  - No Inside Voice d8
+  approaches:
+  - Careful d8
+  - Clever d10
+  - Flashy d4
+  - Forceful d6
+  - Quick d6
+  - Sneaky d8
+  powers:
+  - desc: Girros has superhuman physical abilities from his insect biology.
+    limit: Girros's powers stop working if he's starved of food.
+    traits:
+    - Sonic Screech d10
+    - Enhanced Durability d6
+    - Mimic d8
+    - Subsonic Flight d6
+    - Superhuman Stamina d8
+    - Superhuman Strength d6
+  specialties:
+  - Xenobiology d8
+  - Tactics d8
+  resources:
+  - Incredible Screeching d8 d8
+
+- name: Phil, Oracle of the Big Apple
+  distinctions:
+  - Average Human Male d6
+  - Calm under Pressure d6
+  - Not Really an Insect d6
+  approaches:
+  - Careful d6
+  - Clever d6
+  - Flashy d4
+  - Forceful d4
+  - Quick d4
+  - Sneaky d6
+  powers: []
+  specialties:
+  - Accounting d8
+  resources: []
